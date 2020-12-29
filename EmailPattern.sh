@@ -1,32 +1,9 @@
-#!/bin/bash -x
 
-echo "User Registration"
+read -p "enter a mobile nuumber " phoneNumber
 
-read -p "enter first name " FirstName
+Pattern4="^(91){1}[ ][6-9]{1}[0-9]{9,9}$"
 
-Pattern1="^[A-Z]{1}[a-zA-Z]{3,15}$"
-if [[ $FirstName =~ $Pattern1 ]]
-then
-    echo "true"
-else
-    echo "false"
-fi
-
-
-read -p "enter last name " LastName
-
-Pattern2="^[A-Z]{1}[a-zA-Z]{3,15}$"
-if [[ $LastName =~ $Pattern1 ]]
-then
-    echo "true"
-else
-    echo "false"
-fi
-
-read -p "enter valid emailid " emailid
-
-Pattern3="^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$"
-if [[ $emailid =~ $Pattern3 ]]
+if [[ $phoneNumber =~ $Pattern4 ]]
 then
     echo "true"
 else
