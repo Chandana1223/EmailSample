@@ -1,9 +1,9 @@
 
-read -p "enter a mobile nuumber " phoneNumber
+read -p "enter a PassWord " password
 
-Pattern4="^(91){1}[ ][6-9]{1}[0-9]{9,9}$"
+Pattern5="^[a-zA-Z]{1,8}$"
 
-if [[ $phoneNumber =~ $Pattern4 ]]
+if [[ $password =~ $Pattern5 ]]
 then
     echo "true"
 else
