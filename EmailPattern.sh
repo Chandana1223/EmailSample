@@ -1,9 +1,9 @@
 
-read -p "enter a PassWord " Rule3
+read -p "enter a PassWord " Rule4
 
-Pattern7="^[A-Z]{1}[+a-zA-Z0-9]{8,}$"
+Pattern8="^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$"
 
-if [[ $Rule3 =~ $Pattern7 ]]
+if [[ $Rule4 =~ $Pattern8 ]]
 then
     echo "true"
 else
