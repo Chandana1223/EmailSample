@@ -1,9 +1,9 @@
 
-read -p "enter a PassWord " Rule4
+read -p "enter a email " Emailsample
 
-Pattern8="^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$"
+Pattern9="^[a-zA-Z0-9._-+]+@(gmail|abc|yahoo)+.(com|co|in)"
 
-if [[ $Rule4 =~ $Pattern8 ]]
+if [[ $Emailsample =~ $Pattern9 ]]
 then
     echo "true"
 else
